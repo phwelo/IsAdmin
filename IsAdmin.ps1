@@ -2,7 +2,7 @@
 $SqlConnection = New-Object System.Data.SqlClient.SqlConnection
 
 #Write-only access via scriptuser sql account
-$SqlConnection.ConnectionString = "Server=as2.levelone.local;Database=ScriptOutput;User Id=scriptuser;Password=scr1pt3dPW;"
+$SqlConnection.ConnectionString = "Server=server;Database=database;User Id=sqluser;Password=password;"
 $SqlConnection.Open()
 $Command = New-Object System.Data.SQLClient.SQLCommand
 $Command.Connection = $SqlConnection
